@@ -36,22 +36,20 @@ export const cartSlice = createSlice({
         decrementToCart(state, action: PayloadAction<string>) {
             const productDecremented = state.findIndex(product => product.id === Number(action.payload));
             state[productDecremented].quantity--;
+            if(state[productDecremented].quantity === productDecremented) {
+                console.log('teste');
+            }
         },
 
         removeToCart(state, action: PayloadAction<string>) {
-            const productIndex = state.findIndex(product => product.id === Number(action.payload));
             return state.filter(product => product.id !== Number(action.payload));
             
         },
-
-        resetToCart(state, action: PayloadAction<IProduct>) {
-            alert('Teste');
-        }
     },
 })
 
-export const { addToCart, removeToCart, incrementToCart, decrementToCart, resetToCart } = cartSlice.actions;
+export const { addToCart, removeToCart, incrementToCart, decrementToCart } = cartSlice.actions;
 export default cartSlice.reducer
 
-export const countCart = (state: RootState) => state.cart.reduce((count, value) => count += (value.quantity + 0), 0);
+export const countCart = (state: RootState) => state.cart.reduce((count, value) => count += (value.quantity), 0);
 export const getTotalPrice = (state: RootState) => state.cart.reduce((acc, next) => acc += (next.quantity * Number(next.price)), 0);

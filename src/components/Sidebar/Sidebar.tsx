@@ -2,7 +2,7 @@ import { ContanierSidebar, CSidebar, ProductCheckout, EndSidebar, FinalPrice, Ic
 import ItemCheckout from "../ItemCheckout/ItemCheckout";
 import React from "react";
 import { useAppSelector } from "../../context/hooks";
-import { getTotalPrice } from "../../counter/cartSlices";
+import { getTotalPrice } from "../../slices/cartSlices";
 import { formatPrice } from "../../utils/formatPrice";
 import { SidebarProps } from "../Header/Header";
 
@@ -19,10 +19,12 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
                     <p className="close" onClick={onClose}>X</p>
                 </IconSidebar>
                 <ProductCheckout>
+
                     {
                         products.map((product) => (
                             <ItemCheckout key={product.id} id={product.id} quantity={product.quantity} name={product.name} photo={product.photo} price={product.price} />
                         ))
+
                     }
                 </ProductCheckout>
                 <FinalPrice>

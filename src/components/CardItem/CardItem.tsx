@@ -4,7 +4,7 @@ import { IProduct } from '../../interfaces/interface';
 
 import { formatPrice } from '../../utils/formatPrice';
 
-import { addToCart } from '../../counter/cartSlices';
+import { addToCart } from '../../slices/cartSlices';
 
 import { useState } from 'react';
 
@@ -46,11 +46,11 @@ const CardItem: React.FC<IProduct> = (product) => {
                 {isLoading ? <h1>{name}</h1> : <Shimmer width={115} height={40} />}
                 {isLoading ? <span>{formatPrice(price)}</span> : <Shimmer width={75} height={40} />}
             </ItemTitle>
-            <DescriptionItem id='teste'>
+            <DescriptionItem>
                 {isLoading ? description : <Shimmer width={200} height={50} />}
             </DescriptionItem>
             {isLoading ? <ButtonItem onClick={() => addToCardHandler(product)}>
-                <img src={logoCompra} alt="" /> COMPRAR
+                <img src={logoCompra} alt="" /><p>COMPRAR</p>
             </ButtonItem> : <Shimmer width={215} height={35} />}
         </ContainerCard>
     );

@@ -3,7 +3,7 @@ import { AmountItem, CheckoutSidebar, DescriptionCheckout, ImageCheckout, PriceI
 import { IProduct } from "../../interfaces/interface";
 import { useAppDispatch } from "../../context/hooks";
 
-import { decrementToCart, incrementToCart, removeToCart } from '../../counter/cartSlices';
+import { decrementToCart, incrementToCart, removeToCart } from '../../slices/cartSlices';
 import { formatPrice } from "../../utils/formatPrice";
 
 const ItemCheckout: React.FC<IProduct> = (product) => {

@@ -58,7 +58,7 @@ export const ItemTitle = styled.div`
     }
 `;  
 
-export const DescriptionItem = styled.p`
+export const DescriptionItem = styled.div`
     font-size: 10px;
     font-weight: 300;
     margin: 4%;
@@ -80,7 +80,15 @@ export const ButtonItem = styled.button`
         font-weight: 600;
 
     > img {
-        width: 12px;
-        height: 12px;
+        width: 16px;
+        height: 16px;
+        margin-top: 8px;
+        margin-right: 90px;
+    }
+
+    > p {
+        width: 80px;
+        margin-top: -19px;
+        margin-left: 75px;
     }
 `;
