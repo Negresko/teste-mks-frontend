@@ -1,0 +1,1 @@
+export const apiUrl = 'https://mks-challenge-api-frontend.herokuapp.com/api/v1';
