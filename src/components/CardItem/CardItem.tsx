@@ -57,4 +57,3 @@ const CardItem: React.FC<IProduct> = (product) => {
 }
 
 export default CardItem;
-//
