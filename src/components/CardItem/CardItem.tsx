@@ -1,26 +1,19 @@
 import { ButtonItem, ContainerCard, DescriptionItem, ItemImage, ItemTitle } from './CardItemCSS';
-
 import { IProduct } from '../../interfaces/interface';
-
 import { formatPrice } from '../../utils/formatPrice';
-
 import { addToCart } from '../../slices/cartSlices';
-
 import { useState } from 'react';
-
-import logoCompra from '../../path.svg';
-
+import logoCompra from '../../icons/path.svg';
 import { useAppDispatch } from '../../context/hooks';
-
 import { Shimmer } from 'react-shimmer';
-
 import { useEffect } from 'react';
 
 const CardItem: React.FC<IProduct> = (product) => {
 
     const [isLoading, setIsLoading] = useState(false);
-
     const { name, photo, description, price } = product;
+    const dispatch = useAppDispatch();
+    const addToCardHandler = (product: IProduct) => dispatch(addToCart({...product}));
 
     useEffect(() => {
         if(product){
@@ -30,9 +23,7 @@ const CardItem: React.FC<IProduct> = (product) => {
         }
     }, [product])
 
-    const dispatch = useAppDispatch();
-
-    const addToCardHandler = (product: IProduct) => dispatch(addToCart({...product}));
+    
 
     return (
         <ContainerCard>

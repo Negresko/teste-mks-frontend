@@ -1,6 +1,5 @@
-import { createSlice, current, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { RootState } from '../context/redux';
-
 import { IProduct } from '../interfaces/interface';
 
 const initialState: IProduct[] = [

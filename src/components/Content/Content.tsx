@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
-
 import CardItem from '../CardItem/CardItem';
-
 import { ContainerContent, SpaceContent } from './ContentCSS';
-
 import axios from '../../connection/axios';
-
 import { IProduct } from '../../interfaces/interface';
 
 const Content = () => {
@@ -24,7 +20,7 @@ const Content = () => {
     }).then(response => {
       setProducts(response.data.products);
     })
-  }, [])
+  }, [products]);
 
   return (
     <ContainerContent>

@@ -3,7 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import { useState } from 'react';
 import { countCart } from '../../slices/cartSlices';
 import { useAppSelector } from '../../context/hooks';
-import logoCarrinho from '../../vector.svg';
+import logoCarrinho from '../../icons/vector.svg';
 
 export interface SidebarProps {
   isActive: boolean;
@@ -13,9 +13,7 @@ export interface SidebarProps {
 const Header: React.FC = () => {
 
   const [sidebar, setSidebar] = useState(false);
-
   const showSidebar = () => setSidebar(!sidebar);
-
   const counterCart = useAppSelector(countCart);
 
   return (

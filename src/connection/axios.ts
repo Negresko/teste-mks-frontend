@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-import { apiUrl } from '../provisoriaURL';
-
 const instance = axios.create({
-    baseURL: apiUrl,
+    baseURL: 'https://mks-challenge-api-frontend.herokuapp.com/api/v1',
     timeout: 1000,
 });
 

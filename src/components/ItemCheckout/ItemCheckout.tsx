@@ -1,8 +1,6 @@
 import { AmountItem, CheckoutSidebar, DescriptionCheckout, ImageCheckout, PriceItem, QtdItem, ContainerCheckout, ButtonClose } from "./ItemCheckoutCSS";
-
 import { IProduct } from "../../interfaces/interface";
 import { useAppDispatch } from "../../context/hooks";
-
 import { decrementToCart, incrementToCart, removeToCart } from '../../slices/cartSlices';
 import { formatPrice } from "../../utils/formatPrice";
 

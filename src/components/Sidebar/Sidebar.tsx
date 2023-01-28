@@ -1,10 +1,10 @@
+import React from "react";
 import { ContanierSidebar, ContentCheckout, ProductCheckout, EndSidebar, FinalPrice, IconSidebar } from "./SidebarCSS";
 import ItemCheckout from "../ItemCheckout/ItemCheckout";
-import React from "react";
+import { SidebarProps } from "../Header/Header";
 import { useAppDispatch, useAppSelector } from "../../context/hooks";
 import { getTotalPrice, reset } from "../../slices/cartSlices";
 import { formatPrice } from "../../utils/formatPrice";
-import { SidebarProps } from "../Header/Header";
 import { IProduct } from "../../interfaces/interface";
 
 const Sidebar: React.FC<SidebarProps> = ({ onClose }, product: IProduct) => {
@@ -13,7 +13,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }, product: IProduct) => {
     const products = useAppSelector((state) => state.cart);
 
     const dispatch = useAppDispatch();
-    
     const resetTest = (product: IProduct) => dispatch(reset(product));
 
     return (
