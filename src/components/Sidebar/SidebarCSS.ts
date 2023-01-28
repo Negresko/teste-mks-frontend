@@ -2,14 +2,31 @@ import styled from "styled-components";
 
 export const ContanierSidebar = styled.div`
     background: #0F52BA;
-    width: 468px;
     height: 100vh;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     transition: width 2s;
+    
+    @media (max-width: 400px){
+        width: 280px;
+    }
+
+    @media (min-width: 400px) {
+        width: 380px;
+    }
+
+    @media (min-width: 700px) {
+        width: 468px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 468px;
+    }
+
+
 `;
 
 export const ContentCheckout = styled.div`
@@ -37,8 +54,6 @@ export const IconSidebar = styled.div`
     > .close {
         width: 34px;
         height: 34px;
-        margin-left: 410px;
-        margin-top: -100px;
         margin-bottom: -60px;
         color: #FFF;
         background: #000;
@@ -48,11 +63,31 @@ export const IconSidebar = styled.div`
         font-size: 28;
         font-weight: 400;
         cursor: pointer;
+
+        @media (max-width: 400px) {
+            margin-left: 235px;
+            margin-top: -120px;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 1px;
+            width: 25px;
+            height: 25px;
+
+        }
+
+        @media (min-width: 400px) {
+            margin-left: 300px;
+            margin-top: -80px;
+        }
+
+        @media (min-width: 700px) {
+            margin-left: 390px;
+            margin-top: -80px;
+        }
     }
 `;
 
 export const ProductCheckout = styled.div`
-    width: 85%;
     height: 560px;
     margin-left: 10px;
     padding-top: 20px;  
@@ -60,6 +95,30 @@ export const ProductCheckout = styled.div`
     margin-bottom: 30px;
     padding-bottom: -100px;
     
+    @media (max-width: 400px) {
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: -2px;
+    }
+
+    @media (min-width: 400px) {
+        width: 100%;
+        margin-left: 80px;
+        margin-bottom: -2px;
+    }
+
+    @media (min-width: 700px) {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: -20px;
+    }
+
     > p {
     color: #fff;
     font-size: 20px;
@@ -86,17 +145,21 @@ export const FinalPrice = styled.div`
     margin-top: 80%;
     color: #FFF;
     margin-top: 1px;
-    
+
     > p {
         margin: 50px;
         margin-bottom: 20px;
+         
+        @media (max-width: 400px) {
+            margin-left: 9px;
+        }
     }
-    `;
+`;
 
 export const EndSidebar = styled.div`
     width: 100%;
     color: #FFF;
-        
+
     > button {
         width: 100%;
         height: 97px;

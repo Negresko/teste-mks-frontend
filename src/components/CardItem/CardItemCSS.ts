@@ -9,8 +9,25 @@ export const ContainerCard = styled.div`
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
     flex-direction: column;
-    margin-bottom: 2em;
+    margin-bottom: 20px;
     margin: 1%;
+
+    @media (max-width: 400px) {
+        margin-bottom: 20px;
+        width: 215px;
+        height: 285px;
+    }
+
+    @media (min-width: 400px), (min-width: 700px) {
+        margin-bottom: 20px;
+        width: 260px;
+        height: 330px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 215px;
+        height: 285px;
+    }
 `;
 
 export const ItemImage = styled.div`
@@ -25,8 +42,18 @@ export const ItemImage = styled.div`
 
 
     img {
-        width: 130px;
-        height: 130px;
+        @media (min-width: 400px) {
+            width: 160px;
+            height: 160px;
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 400px), (min-width: 1200px) {
+            width: 130px;
+            height: 130px;
+            margin-top: 15px;
+        }
     }
 `;
 
@@ -39,6 +66,14 @@ export const ItemTitle = styled.div`
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 54px;
+
+    @media (min-width: 400px) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: 400px), (min-width: 1200px) {
+        margin-top: 54px;
+    }   
     
     > h1 {
         font-size: 16px;
@@ -64,6 +99,15 @@ export const DescriptionItem = styled.div`
     text-align: left;
     margin: 5px;
     height: 53px;
+
+    @media (min-width: 400px) {
+        margin: 10px;
+    }
+    
+    @media (max-width: 400px), (min-width: 1200px) {
+        margin: 5px;
+    }    
+
 `;
 
 export const ButtonItem = styled.button`
@@ -78,16 +122,40 @@ export const ButtonItem = styled.button`
         font-size: 14px;
         font-weight: 600;
 
+        @media (min-width: 400px) {
+            width: 100%;
+        }  
+
+        @media (max-width: 400px), (min-width: 1200px) {
+            width: 215px;
+        }  
+
     > img {
         width: 16px;
         height: 16px;
         margin-top: 8px;
         margin-right: 90px;
+
+        @media (min-width: 400px), (min-width: 700px) {
+            margin-right: 80px;
+        }
+
+        @media (max-width: 400px), (min-width: 1200px) {
+            margin-right: 90px;
+        }
     }
 
     > p {
         width: 80px;
         margin-top: -19px;
         margin-left: 75px;
+
+        @media (min-width: 400px), (min-width: 700px) {
+            margin-left: 95px;
+        }
+
+        @media (max-width: 400px), (min-width: 1200px) {
+            margin-left: 75px;
+        }
     }
 `;

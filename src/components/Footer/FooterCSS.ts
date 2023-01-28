@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const ContainerFooter = styled.div`
+export const ContainerFooter = styled.div`  
+    width: 100%;
     height: 35px;
     background: #EEEEEE;
-    display: flex;
-    margin-top: 7.9em;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
+    display: flex;
 
     > span {
         font-weight: bold;
