@@ -73,6 +73,9 @@ export const AmountItem = styled.div`
     margin-top: -5px;
     margin-left: 185px;
     margin-bottom: 185px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 
     > span {
         width: 100%;

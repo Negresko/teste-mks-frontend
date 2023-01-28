@@ -1,8 +1,7 @@
 import { ContainerHeader, HeaderButton, HeaderTitle } from './HeaderCSS';
-import { TiShoppingCart } from 'react-icons/ti';
 import Sidebar from '../Sidebar/Sidebar';
 import { useState } from 'react';
-import { countCart } from '../../counter/cartSlices';
+import { countCart } from '../../slices/cartSlices';
 import { useAppSelector } from '../../context/hooks';
 import logoCarrinho from '../../vector.svg';
 

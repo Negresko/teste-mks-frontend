@@ -31,7 +31,7 @@ const Content = () => {
       <SpaceContent >
 
         {
-          products.map(product =>
+          products.map((product) =>
             <CardItem key={product.id} id={product.id} name={product.name} quantity={1} photo={product.photo} description={product.description} price={product.price} />
           )
         }

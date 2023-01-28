@@ -12,7 +12,7 @@ export const ContanierSidebar = styled.div`
     transition: width 2s;
 `;
 
-export const CSidebar = styled.div`
+export const ContentCheckout = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ export const IconSidebar = styled.div`
     color: #FFF;
     width: 100%;
     margin-bottom: 50px;
-
+    
     > p {
         font-weight: bold;
         font-size: 27px;
@@ -48,6 +48,32 @@ export const IconSidebar = styled.div`
         font-size: 28;
         font-weight: 400;
         cursor: pointer;
+    }
+`;
+
+export const ProductCheckout = styled.div`
+    width: 85%;
+    height: 560px;
+    margin-left: 10px;
+    padding-top: 20px;  
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    padding-bottom: -100px;
+    
+    > p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: transparent; 
+        border-radius: 10px;
     }
 `;
 
@@ -80,24 +106,12 @@ export const EndSidebar = styled.div`
         background: #000;
         color: #FFF;
     }
-`;
 
-export const ProductCheckout = styled.div`
-    width: 85%;
-    height: 560px;
-    margin-left: 10px;
-    padding-top: 20px;  
-    overflow-y: scroll;
-    margin-bottom: 30px;
-    padding-bottom: -100px;
-
-    ::-webkit-scrollbar {
-        width: 10px;
-        margin-left: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: transparent; 
-        border-radius: 10px;
+    > button:disabled {
+        background-color: #cccccc;
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        cursor: not-allowed;
     }
 `;

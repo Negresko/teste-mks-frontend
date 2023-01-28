@@ -27,15 +27,12 @@ const CardItem: React.FC<IProduct> = (product) => {
             setTimeout(() => {
                 setIsLoading(true);
             }, 2000);
-        } else {
-            setIsLoading(false);
         }
-
-    }, [isLoading])
+    }, [product])
 
     const dispatch = useAppDispatch();
 
-    const addToCardHandler = (product: IProduct) => dispatch(addToCart(product));
+    const addToCardHandler = (product: IProduct) => dispatch(addToCart({...product}));
 
     return (
         <ContainerCard>

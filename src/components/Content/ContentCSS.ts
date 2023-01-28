@@ -6,17 +6,6 @@ export const ContainerContent = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    overflow-y: scroll;
-    
-    ::-webkit-scrollbar {
-        width: 10px;
-        margin-left: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: transparent; 
-        border-radius: 10px;
-    }
 `;
 
 export const SpaceContent = styled.div`
