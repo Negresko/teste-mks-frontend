@@ -8,10 +8,10 @@ export const ContanierSidebar = styled.div`
     top: 0;
     right: 0;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-    transition: width 2s;
     
     @media (max-width: 400px){
         width: 280px;
+        height:100%;
     }
 
     @media (min-width: 400px) {
@@ -41,6 +41,7 @@ export const IconSidebar = styled.div`
     color: #FFF;
     width: 100%;
     margin-bottom: 50px;
+
     
     > p {
         font-weight: bold;
@@ -72,7 +73,6 @@ export const IconSidebar = styled.div`
             padding: 1px;
             width: 25px;
             height: 25px;
-
         }
 
         @media (min-width: 400px) {
@@ -99,11 +99,12 @@ export const ProductCheckout = styled.div`
         width: 100%;
         margin-left: 30px;
         margin-bottom: -2px;
+
     }
 
     @media (min-width: 400px) {
         width: 100%;
-        margin-left: 80px;
+        margin-left: 70px;
         margin-bottom: -2px;
     }
 
@@ -111,18 +112,47 @@ export const ProductCheckout = styled.div`
         width: 100%;
         margin-bottom: 30px;
         margin-left: 80px;
+
+        @media (min-height: 1024px) {
+            height: 625px;
+        }
+
+        @media (min-height: 1180px) {
+            height: 780px;
+        }
+
+        @media (min-height: 1300px){
+            height: 970px;
+        }
     }
 
     @media (min-width: 1200px) {
         width: 100%;
         margin-bottom: 30px;
-        margin-left: -20px;
+        margin-left: 30px;
     }
 
     > p {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+
+    @media (max-width: 400px) {
+        margin-left: -15px;
+    }
+
+    @media (min-width: 400px) {
+        margin-right: 50px;
+    }
+
+    @media (min-width: 700px) {
+        margin-right: 80px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 10px;
+    }
+
     }
 
     ::-webkit-scrollbar {

@@ -24,6 +24,11 @@ export const SpaceContent = styled.div`
     @media (min-width: 400px) {
         padding-top: 20px;
         padding-bottom: 40px;
+
+        @media (min-height: 900px) {
+            padding: 1px;
+            margin-top: 35px;
+        }
     }
 
     @media (min-width: 1000px) {

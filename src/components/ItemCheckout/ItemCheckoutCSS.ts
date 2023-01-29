@@ -26,11 +26,13 @@ export const CheckoutSidebar = styled.div`
         width: 62%;
         height: 250px;
         margin-left: 50px;
+        margin-top: 15px;
     }
 
     @media (min-width: 1200px) {
         width: 85%;
         height: 80px;
+        margin-left: 25px;
     }
 `;
 
@@ -340,7 +342,7 @@ export const ButtonClose = styled.div`
 
         @media (min-width: 1200px) {
             margin-left: 20px;
-            margin-top: 15px;
+            margin-top: 20px;
             background: #000;
             color: #fff;
             width: 20px;
