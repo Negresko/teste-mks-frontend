@@ -19,7 +19,7 @@ const CardItem: React.FC<IProduct> = (product) => {
         if(product){
             setTimeout(() => {
                 setIsLoading(true);
-            }, 2000);
+            }, 1000);
         }
     }, [])
 
