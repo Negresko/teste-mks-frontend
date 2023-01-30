@@ -32,6 +32,7 @@ export const SpaceContent = styled.div`
     }
 
     @media (min-width: 1200px) {
-        padding: 70px;
+        margin-top: 90px;
+        height: 100px;
     }
 `;

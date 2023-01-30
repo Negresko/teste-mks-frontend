@@ -97,7 +97,6 @@ export const DescriptionItem = styled.div`
     font-weight: 300;
     margin: 4%;
     text-align: left;
-    margin: 5px;
     height: 53px;
 
     @media (min-width: 400px) {
@@ -106,6 +105,7 @@ export const DescriptionItem = styled.div`
     
     @media (max-width: 400px), (min-width: 1200px) {
         margin: 5px;
+        margin-left: 13px;
     }    
 
 `;
