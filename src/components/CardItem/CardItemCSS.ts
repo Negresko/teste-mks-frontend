@@ -52,7 +52,7 @@ export const ItemImage = styled.div`
         @media (max-width: 400px), (min-width: 1200px) {
             width: 130px;
             height: 130px;
-            margin-top: 15px;
+            margin-top: 2px;
         }
     }
 `;

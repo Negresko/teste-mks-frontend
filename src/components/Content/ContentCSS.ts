@@ -31,7 +31,7 @@ export const SpaceContent = styled.div`
         }
     }
 
-    @media (min-width: 1000px) {
-        padding: 90px;
+    @media (min-width: 1200px) {
+        padding: 80px;
     }
 `;
