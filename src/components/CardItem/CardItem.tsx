@@ -21,7 +21,7 @@ const CardItem: React.FC<IProduct> = (product) => {
                 setIsLoading(true);
             }, 2000);
         }
-    }, [product])
+    }, [])
 
     
 

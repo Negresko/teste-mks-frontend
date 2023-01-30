@@ -20,7 +20,7 @@ const Content = () => {
     }).then(response => {
       setProducts(response.data.products);
     })
-  }, [products]);
+  }, []);
 
   return (
     <ContainerContent>

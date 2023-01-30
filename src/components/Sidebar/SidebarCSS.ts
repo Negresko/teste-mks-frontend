@@ -206,5 +206,6 @@ export const EndSidebar = styled.div`
         font-size: 28px;
         font-weight: 700;
         cursor: not-allowed;
+        
     }
 `;
