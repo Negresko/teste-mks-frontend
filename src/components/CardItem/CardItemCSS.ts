@@ -53,6 +53,7 @@ export const ItemImage = styled.div`
             width: 130px;
             height: 130px;
             margin-top: 2px;
+            margin-left: 0.1em;
         }
     }
 `;

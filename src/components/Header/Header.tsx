@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         </p>
       </HeaderTitle>
       <HeaderButton>
-        <button onClick={showSidebar}><img src={logoCarrinho} alt="" />{counterCart}</button>
+        <button name='sidebarOpen' onClick={showSidebar}><img src={logoCarrinho} alt="" />{counterCart}</button>
         {sidebar && <Sidebar isActive={sidebar} onClose={showSidebar} />}
       </HeaderButton>
     </ContainerHeader>
